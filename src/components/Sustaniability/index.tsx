@@ -29,7 +29,6 @@ const Sustainability = () => {
 
         <div
           style={{
-            // backgroundImage: `url(/images/sustainability/sustainability-img2.jpg)`,
             backgroundSize: 'cover',
             width: '100%',
             height: '500px',
@@ -41,7 +40,6 @@ const Sustainability = () => {
               <div className="w-full px-4">
                 <div className="mx-auto max-w-[800px]">
                   <h1 className="mb-3 text-3xl font-bold text-black dark:text-white xs:text-3xl sm:text-4xl md:text-5xl"
-                  // className="mb-5 text-3xl font-bold leading-tight text-[#090e34] xs:text-4xl sm:text-5xl md:text-6xl"
                   >
                     OUR CONTRIBUTION TOWARDS A GREENER WORLD.
                   </h1>
@@ -102,8 +100,6 @@ const Sustainability = () => {
 
         <div className="container mx-auto px-4 my-60">
           <div className="container mx-auto px-4 my-40 fade-in">
-            {/* <h2 className="text-center mb-5 text-3xl font-bold">
-              SUSTAINABLE DYEING</h2> */}
             <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="lg:col-span-4 px-4 hover:scale-105 transition-transform">
                 <Image
@@ -167,7 +163,7 @@ const Sustainability = () => {
           </div>
         </div>
         <Certifications />
-        //       {/* Add custom styles for animations and hover */}
+              {/* Add custom styles for animations and hover */}
         <style jsx>{`
         .fade-in {
           opacity: 0;
