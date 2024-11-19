@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
@@ -21,7 +21,7 @@ const Certifications = () => {
   const settings = {
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -29,40 +29,35 @@ const Certifications = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
-        }
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+          arrows: false, // Remove arrows for a cleaner look
+        },
+      },
+    ],
   };
 
   return (
-    <>
-      <div className="container w-full mx-auto py-16 px-4">
-        <SectionTitle
-          title="Certifications"
-          paragraph=''
-          center
-        />
-        <Slider {...settings}>
+    <div className="container w-full mx-auto py-16 px-4">
+      <SectionTitle title="Certifications" paragraph="" center />
+      <Slider {...settings}>
           {imageData.map((item, index) => (
-            <div key={index} className="">
+            <div key={index} className="justify-center items-center">
               <div className="relative mx-auto" style={{ height: '700px', width: '700px' }}>
                 <Image
                   src={item.src}
@@ -76,9 +71,8 @@ const Certifications = () => {
             </div>
           ))}
         </Slider>
-      </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default Certifications;

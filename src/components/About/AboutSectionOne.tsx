@@ -25,29 +25,27 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="About Us"
-                paragraph=
-                "Indigo textile (Pvt) Ltd was formed in the year 2005 with the vision of setting up Pakistan’s most premium state of the art denim manufacturing facility. With an overall capacity of 36M meters, global recognition and providing global fashion market with premium denim products, Indigo has proved itself on different fronts of technology and sustainability. At Indigo we control the entire process of denim manufacturing starting from the yarn to the finished fabric. We are backed by international quality standards ensuring that every product that is made is of the highest quality. Our strongest forte Is technology and sustainability and we channel down this in the manufacturing of our products."
+                paragraph={
+                  <>
+                    Indigo Textile (Pvt) Ltd was formed in the year 2005 with the vision of setting up
+                    Pakistan’s most premium state-of-the-art denim manufacturing facility. <br />
+
+                    With an overall capacity of 36M meters, global recognition, and providing the
+                    global fashion market with premium denim products, Indigo has proved itself on
+                    different fronts of technology and sustainability. <br />
+
+                    At Indigo, we control the entire process of denim manufacturing, starting from
+                    the yarn to the finished fabric. We are backed by international quality standards,
+                    ensuring that every product made is of the highest quality. <br />
+
+                    Our strongest forte is technology and sustainability, and we channel this into
+                    the manufacturing of our products.
+                  </>
+                }
+
+
                 mb="44px"
               />
-
-              {/* <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div>
-              </div> */}
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
@@ -56,33 +54,173 @@ const AboutSectionOne = () => {
                   src="/images/about/about.jpg"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded"
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
                   src="/images/about/about.jpg"
                   alt="about-image"
                   fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded"
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
               </div>
             </div>
-            <div className=" align-middle mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="text-center">
-                <h2 className="text-4xl font-bold text-primary">36M+</h2>
-                <p className="mt-2 text-lg text-body-color">Meters of Denim Produced</p>
-              </div>
-              <div className="text-center">
-                <h2 className="text-4xl font-bold text-primary">2005</h2>
-                <p className="mt-2 text-lg text-body-color">Year of Establishment</p>
-              </div>
-              <div className="text-center">
-                <h2 className="text-4xl font-bold text-primary">100+</h2>
-                <p className="mt-2 text-lg text-body-color">Global Clients</p>
+          </div>
+        </div>
+
+        {/* our mission */}
+        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="-mx-4 flex flex-wrap items-center">
+
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
               </div>
             </div>
 
+            <div className="w-full px-4 lg:w-1/2 mt-5">
+              <SectionTitle
+                title="Our Mission"
+                paragraph="At Indigo, we are committed to pushing the boundaries of denim innovation, prioritizing sustainability, and creating products that reflect our dedication to quality and style."
+                mb="44px"
+              />
+            </div>
           </div>
         </div>
+
+
+        {/* key achivements */}
+        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="-mx-4 flex flex-wrap items-center">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
+              <SectionTitle
+                title="Key Achievements"
+                paragraph="With over 36 million meters of denim produced annually, Indigo has garnered global recognition for its innovative technology and sustainable practices. Our products are trusted by fashion brands worldwide."
+                mb="44px"
+              />
+            </div>
+
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* sustainability */}
+        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="-mx-4 flex flex-wrap items-center">
+          <div className="w-full px-4 lg:w-1/2">
+              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+              </div>
+            </div>
+
+            <div className="w-full px-4 lg:w-1/2 mt-5">
+              <SectionTitle
+                title="Sustainability at Indigo"
+                paragraph="We are committed to minimizing our environmental footprint by adopting sustainable practices in every stage of our production process. From water conservation to the use of organic materials, Indigo is dedicated to eco-conscious fashion."
+                mb="44px"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* meet the team */}
+
+        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="-mx-4 flex flex-wrap items-center">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
+              <SectionTitle
+                title="Meet the Team"
+                paragraph="Our leadership team brings together decades of experience in the textile and fashion industry. Together, we steer Indigo towards a future of innovation and excellence."
+                mb="44px"
+              />
+              {/* Add photos of leadership here */}
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* join us */}
+        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="-mx-4 flex flex-wrap items-center">
+
+          <div className="w-full px-4 lg:w-1/2">
+              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="about-image"
+                  fill
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2 mt-5">
+              <SectionTitle
+                title="Join Us in Our Mission"
+                paragraph="Be a part of our sustainable journey. Contact us to learn more about our products or explore partnership opportunities."
+                mb="44px"
+              />
+              <button className="mt-4 px-8 py-3 bg-primary text-white rounded-full">Contact Us</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

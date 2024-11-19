@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
@@ -26,8 +27,8 @@ const Hero = () => {
                     🔥 Get Pro
                   </Link> */}
                   <Link
-                    href="#"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    href="/about"
+                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white border-2 border-transparent duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 hover:border-white"
                   >
                     Learn More
                   </Link>
@@ -36,7 +37,16 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute right-0 top-0 z-[-1] w-full h-full opacity-60 lg:opacity-100">
+          <Image
+            src="/images/hero/hero2.jpg"
+            alt="Background"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div>
+        {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -276,7 +286,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );

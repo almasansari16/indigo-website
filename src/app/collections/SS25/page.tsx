@@ -72,7 +72,7 @@ const SS25 = () => {
   return (
     <>
       <div className="container mx-auto py-16 px-4">
-        <Breadcrumb pageName="Collection SS 25" description="" />
+        <Breadcrumb pageName="Collection SS 25" description="" currentPageName="SS 25" />
         <Slider {...settings}>
           {imageData.map((item, index) => (
             <div key={index} className="px-4">

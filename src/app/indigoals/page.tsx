@@ -6,6 +6,7 @@ const Indigoals = () => {
     <>
      <Breadcrumb
         pageName="Indigoals"
+        currentPageName='Indigoals'
         description=""
       />
       <div className='container'>

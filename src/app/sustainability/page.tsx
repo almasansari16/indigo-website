@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
-import Sustainability from "@/components/Sustaniability";
+import SustainabilityPage1 from "@/components/Sustaniability/SustainabilityPage1";
 
 
 export const metadata: Metadata = {
@@ -13,10 +13,11 @@ const SustainabilityPage = () => {
     <>
       <Breadcrumb
         pageName="sustainability"
+        currentPageName="sustainability"
         description=""
       />
 
-      <Sustainability />
+      <SustainabilityPage1 />
     </>
   );
 };
