@@ -10,7 +10,7 @@ const Indigoals = () => {
         description=""
       />
       <div className='container'>
-
+          
       </div>
     </>
   )

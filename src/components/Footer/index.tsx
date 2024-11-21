@@ -28,7 +28,7 @@ const Footer = () => {
                     style={{ width: '150px', height: '50px' }}
                   />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                {/* <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   <span className="flex items-center mb-2">
                     <svg
                       width="24"
@@ -68,6 +68,58 @@ const Footer = () => {
                     </svg>
                     +92 21 3475 0210 – 5
                   </span>
+                </p> */}
+                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Naclass+306+Deh+Joreji+Bin+Qasim,+Karachi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center mb-2"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="mr-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+                    </svg>
+                    Naclass 306 – Deh Joreji Bin Qasim, Karachi
+                  </a>
+                  <a
+                    href="mailto:marketing@indigo.com.pk"
+                    className="flex items-center mb-2"
+                  >
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="mr-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7l-8-5h16l-8 5zm0 2l-8-5v10h16V8l-8 5z" />
+                    </svg>
+                    marketing@indigo.com.pk
+                  </a>
+                  <a
+                    href="tel:+922134750210"
+                    className="flex items-center"
+                  >
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="mr-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6.62 10.79a15.053 15.053 0 006.58 6.58l2.2-2.2a1.003 1.003 0 011.11-.21c1.12.45 2.33.68 3.59.68.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.26.23 2.47.68 3.59.13.26.09.57-.21 1.11l-2.2 2.2z" />
+                    </svg>
+                    +92 21 3475 0210 – 5
+                  </a>
                 </p>
 
                 <div className="flex items-center">
@@ -136,18 +188,18 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/blog"
+                      href="/indigoals"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Indigoals
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/sustainability"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      Sustainability
                     </Link>
                   </li>
                   <li>
@@ -226,7 +278,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              © {new Date().getFullYear()} Created by Almas with {' '}
+              © {new Date().getFullYear()} Created by {' '}
               <a
                 href="/"
                 rel="noopener noreferrer"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import Link from "next/link";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -48,7 +49,7 @@ const AboutSectionOne = () => {
               />
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
                   src="/images/about/about.jpg"
@@ -71,16 +72,16 @@ const AboutSectionOne = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/ourMission.jpg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/ourMission.jpg"
                   alt="about-image"
                   fill
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
@@ -102,7 +103,7 @@ const AboutSectionOne = () => {
         {/* key achivements */}
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2 mt-5">
+            <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Key Achievements"
                 paragraph="With over 36 million meters of denim produced annually, Indigo has garnered global recognition for its innovative technology and sustainable practices. Our products are trusted by fashion brands worldwide."
@@ -110,16 +111,16 @@ const AboutSectionOne = () => {
               />
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/keyAchievements.webp"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/keyAchievements.webp"
                   alt="about-image"
                   fill
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
@@ -132,16 +133,16 @@ const AboutSectionOne = () => {
         {/* sustainability */}
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/sustainability.webp"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/sustainability.webp"
                   alt="about-image"
                   fill
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
@@ -171,16 +172,16 @@ const AboutSectionOne = () => {
               />
               {/* Add photos of leadership here */}
             </div>
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/ourTeam.jpg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/ourTeam.jpg"
                   alt="about-image"
                   fill
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
@@ -194,7 +195,7 @@ const AboutSectionOne = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
 
-          <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
                   src="/images/about/about.jpg"
@@ -216,7 +217,7 @@ const AboutSectionOne = () => {
                 paragraph="Be a part of our sustainable journey. Contact us to learn more about our products or explore partnership opportunities."
                 mb="44px"
               />
-              <button className="mt-4 px-8 py-3 bg-primary text-white rounded-full">Contact Us</button>
+              <Link href={`/contact`}> <button className="mt-4 px-8 py-3 bg-primary text-white rounded">Contact Us</button></Link>
             </div>
           </div>
         </div>

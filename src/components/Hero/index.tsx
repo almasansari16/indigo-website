@@ -44,6 +44,7 @@ const Hero = () => {
             layout="fill"
             objectFit="cover"
             quality={100}
+            className=""
           />
         </div>
         {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">

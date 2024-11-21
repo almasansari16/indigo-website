@@ -10,7 +10,7 @@ const Sustainability = () => {
           <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center">
               {/* Left Content */}
-              <div className="w-full px-4 lg:w-1/2">
+              <div className="w-full px-4 lg:w-1/2 md:w-1/2">
                 <SectionTitle
                   title="Commitment to Sustainability"
                   paragraph=" Sustainability is at the core of what we do.
@@ -32,7 +32,7 @@ const Sustainability = () => {
               </div>
 
               {/* Right Image */}
-              <div className="w-full px-4 lg:w-1/2">
+              <div className="w-full px-4 lg:w-1/2 md:w-1/2">
                 <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                   <Image
                     src="/images/sustainability/sus2.jpg"
