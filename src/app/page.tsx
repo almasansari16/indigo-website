@@ -29,9 +29,9 @@ export default function Home() {
       <Sustainability />
       {/* <AboutSectionOne />
       <AboutSectionTwo />
-      <Testimonials />
       <Pricing /> */}
       <Certifications />
+      <Testimonials />
       {/* <Blog /> */}
       <Contact />
     </>
