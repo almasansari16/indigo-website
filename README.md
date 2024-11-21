@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 #Indigo Denim Industry Website 🌍👖
 About the Project
 The Indigo Denim Industry Website is a platform dedicated to showcasing the legacy, innovations, and sustainability efforts of the denim industry. It serves as a hub for connecting with customers, highlighting key achievements, and promoting eco-friendly practices in denim production.
@@ -33,7 +31,6 @@ bash
 Copy code
 git clone https://github.com/almasansari16/indigo-website
 Navigate to the project folder:
->>>>>>> c8767e729baa1d3452f1ffa51bb945bf5c839511
 
 bash
 Copy code
