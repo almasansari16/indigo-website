@@ -9,7 +9,7 @@ const featuresData: Feature[] = [
     icon: (
       <Image
         className="feature-icon"
-        src="/images/features/RnD.JPG"
+        src="/images/features/RnD.jpg"
         alt="Research & Development"
         width={200}
         height={200}

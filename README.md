@@ -1,5 +1,4 @@
-
-#Indigo Denim Industry Website 🌍👖
+##Indigo Denim Industry Website 🌍👖
 About the Project
 The Indigo Denim Industry Website is a platform dedicated to showcasing the legacy, innovations, and sustainability efforts of the denim industry. It serves as a hub for connecting with customers, highlighting key achievements, and promoting eco-friendly practices in denim production.
 
@@ -7,19 +6,25 @@ Features
 🛠️ Industry Innovations
 Display the latest advancements in denim technology and fashion.
 Highlight eco-friendly practices like water-saving techniques, sustainable fabrics, and recycling programs.
+
+
 🌟 Brand Focus
 Share Indigo’s history and milestones in the denim industry.
 Showcase premium denim collections with a focus on quality and sustainability.
+
+
 ♻️ Sustainability at the Core
 Dedicated sections on sustainability initiatives, including organic materials, renewable energy, and circular economy practices.
 Highlight community-driven programs like fair labor initiatives and artisan empowerment.
+
+
 🛍️ Shopping and Engagement
 Product catalogs featuring premium denim with detailed specifications.
 Integration with social media for customer engagement and campaigns.
 Purpose
 To provide an immersive experience for customers and stakeholders while positioning Indigo as a leader in the sustainable denim industry.
 
-Technologies Used
+##Technologies Used
 Frontend: React, Next.js for fast and dynamic user interfaces.
 Backend: Node.js and Express.js for a seamless API experience.
 Database: PostgreSQL for managing product and customer data.
@@ -34,7 +39,7 @@ Navigate to the project folder:
 
 bash
 Copy code
-cd indigo-denim-website
+cd indigo-website
 Install dependencies:
 
 bash
