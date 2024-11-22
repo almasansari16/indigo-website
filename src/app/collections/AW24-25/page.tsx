@@ -68,7 +68,8 @@ const AW2_25 = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false,
         }
       }
     ]
