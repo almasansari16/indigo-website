@@ -38,7 +38,7 @@ const AW23_24 = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 1024,
