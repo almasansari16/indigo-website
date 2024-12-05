@@ -121,8 +121,6 @@ const ImageGallery = () => {
             click: ({ index }) => setCurrentIndex(index), // Handle image navigation
           }}
         />
-
-
       </div>
     </section>
   );

@@ -41,14 +41,36 @@ const Indigoals = () => {
       </section>
 
       {/* Sustainability Journey */}
-      <section className="mx-auto max-w-3xl px-6 py-12 text-center">
-        <p className="text-base leading-relaxed text-gray-500 md:text-lg">
+      {/* <section
+        className="mx-auto max-w-3xl px-6 py-12 text-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('images/indigoals/unsdg.png')", }}
+      >
+        <p className="text-base leading-relaxed text-gray-500 md:text-lg bg-white/80 p-4 rounded-lg shadow-md">
           Our commitment to sustainability, aligned with the UNSDGs, is evident across our operations. We champion eco-conscious formulas, empower diverse communities, and collaborate with WWF to combat climate change through green practices and solar projects. Recognition on global platforms and community acclaim in Sindh highlight the success of our initiatives.
           <br />
           <br />
           The completion of COP28 and alignment with the Paris Agreement underscore our resolute dedication to a sustainable future. From Quality Education to Good Health and Well-being, we actively support various UNSDGs. Our efforts extend to land and ocean balance, seen in coastal initiatives and coral nursery visits. Looking ahead, we remain steadfast in our contribution to global sustainability goals, committed to a healthier planet.
         </p>
+      </section> */}
+      <section
+        className="relative mx-auto max-w-3xl px-6 py-12 text-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('images/indigoals/unsdg.png')",
+          backgroundSize: "75%",
+        }}
+      >
+        <div className="absolute inset-0 "></div> {/* Overlay for better contrast */}
+        <div className="relative z-10 p-6 rounded-lg shadow-md">
+          <p className="text-base leading-relaxed dark:text-gray-300 text-gray-900 md:text-lg">
+            Our commitment to sustainability, aligned with the UNSDGs, is evident across our operations. We champion eco-conscious formulas, empower diverse communities, and collaborate with WWF to combat climate change through green practices and solar projects. Recognition on global platforms and community acclaim in Sindh highlight the success of our initiatives.
+            <br />
+            <br />
+            The completion of COP28 and alignment with the Paris Agreement underscore our resolute dedication to a sustainable future. From Quality Education to Good Health and Well-being, we actively support various UNSDGs. Our efforts extend to land and ocean balance, seen in coastal initiatives and coral nursery visits. Looking ahead, we remain steadfast in our contribution to global sustainability goals, committed to a healthier planet.
+          </p>
+        </div>
       </section>
+
+
       <div>
         <ImageGallery />
       </div>
