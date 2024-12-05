@@ -117,10 +117,11 @@ const ImageGallery = () => {
           close={() => setOpen(false)}
           slides={images.map((src) => ({ src }))}
           index={currentIndex}
-          onIndexChange={(index) => {
-            if (setCurrentIndex) setCurrentIndex(index);
+          on={{
+            click: ({ index }) => setCurrentIndex(index), // Handle image navigation
           }}
         />
+
 
       </div>
     </section>
