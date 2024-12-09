@@ -188,10 +188,10 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/indigoals"
+                      href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Indigoals
+                      About
                     </Link>
                   </li>
                   <li>
@@ -204,10 +204,18 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/about"
+                      href="/indigoals"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      Indigoals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Contact Us
                     </Link>
                   </li>
                 </ul>
