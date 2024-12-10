@@ -1,8 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import "./style.css";
 
 const Footer = () => {
+  const [display, setDisplay] = useState(true)
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -28,53 +31,12 @@ const Footer = () => {
                     style={{ width: '150px', height: '50px' }}
                   />
                 </Link>
-                {/* <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  <span className="flex items-center mb-2">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="mr-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
-                    </svg>
-                    Naclass 306 – Deh Joreji Bin Qasim, Karachi
-                  </span>
-                  <span className="flex items-center mb-2">
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="mr-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7l-8-5h16l-8 5zm0 2l-8-5v10h16V8l-8 5z" />
-                    </svg>
-                    marketing@indigo.com.pk
-                  </span>
-                  <span className="flex items-center">
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="mr-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M6.62 10.79a15.053 15.053 0 006.58 6.58l2.2-2.2a1.003 1.003 0 011.11-.21c1.12.45 2.33.68 3.59.68.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.26.23 2.47.68 3.59.13.26.09.57-.21 1.11l-2.2 2.2z" />
-                    </svg>
-                    +92 21 3475 0210 – 5
-                  </span>
-                </p> */}
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                <p className="raleway mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=Naclass+306+Deh+Joreji+Bin+Qasim,+Karachi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center mb-2"
+                    className="flex items-center mb-2 raleway"
                   >
                     <svg
                       width="24"
@@ -90,7 +52,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="mailto:marketing@indigo.com.pk"
-                    className="flex items-center mb-2"
+                    className="flex items-center mb-2 raleway"
                   >
                     <svg
                       width="22"
@@ -106,7 +68,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="tel:+922134750210"
-                    className="flex items-center"
+                    className="flex items-center raleway"
                   >
                     <svg
                       width="22"
@@ -182,14 +144,14 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white raleway">
                   Useful Links
                 </h2>
                 <ul>
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About
                     </Link>
@@ -197,7 +159,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/sustainability"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Sustainability
                     </Link>
@@ -205,7 +167,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/indigoals"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Indigoals
                     </Link>
@@ -213,7 +175,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Contact Us
                     </Link>
@@ -224,73 +186,34 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-2/2 md:w-2/2 lg:w-6/12 xl:w-6/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Our Vision
-                </h2>
                 <ul>
                   <li
-                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="map-container mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    At Indigo, we specialize in crafting
-                    high-quality denim that combines
-                    style, durability, and sustainability.
-                    With a commitment to innovation and
-                    eco-friendly production, our denim
-                    is designed to meet the demands
-                    of modern fashion while honoring
-                    timeless craftsmanship. From raw
-                    materials to finished fabric, we
-                    prioritize quality and environmental
-                    responsibility, ensuring every piece
-                    embodies the essence of authentic denim.
+                    <iframe
+                      id="iframeid"
+                      className="responsive-iframe"
+                      width="500"
+                      height="300"
+                      style={{ border: 0 }}
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.312249932738!2d67.3193048519057!3d24.847763704462074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb332529d26834d%3A0xd74848e592e80710!2sIndigo%20Textile!5e0!3m2!1sen!2sus!4v1696920739392!5m2!1sen!2sus"
+                      allowFullScreen
+                    >
+                    </iframe>
                   </li>
                 </ul>
               </div>
             </div>
-            {/* 
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
+            <p className="text-center raleway text-base text-body-color dark:text-white">
               © {new Date().getFullYear()} Created by {' '}
               <a
                 href="/"
                 rel="noopener noreferrer"
-                className="hover:text-primary"
+                className="hover:text-primary raleway"
               >
                 Indigo Textile
               </a>

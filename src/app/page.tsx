@@ -7,6 +7,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import OurVision from "@/components/ourVision/OurVision";
 import Pricing from "@/components/Pricing";
 import Sustainability from "@/components/Sustaniability";
 import Testimonials from "@/components/Testimonials";
@@ -23,6 +24,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      {/* <OurVision /> */}
       <Features />
       <Video />
       <Brands />
@@ -31,7 +33,7 @@ export default function Home() {
       <AboutSectionTwo />
       <Pricing /> */}
       <Certifications />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Blog /> */}
       <Contact />
     </>

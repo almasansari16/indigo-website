@@ -12,12 +12,18 @@ const Sustainability = () => {
               {/* Left Content */}
               <div className="w-full px-4 lg:w-1/2 md:w-1/2">
                 <SectionTitle
-                  title="Commitment to Sustainability"
-                  paragraph=" Sustainability is at the core of what we do.
-                  Sustainable denim and fabric development is
-                  a commitment integrated into our products,
-                   method, and people. We constantly push limits
-                  and challenge accepted standards."
+                  title="Your Denim Journey with Us"
+                  paragraph=" As a prominent entity in the
+                   global denim manufacturing landscape,
+                    our organization distinguishes itself 
+                    through a strategic commitment to three
+                     core principles: sustainability,
+                      innovation, and purposeful design. 
+                      We recognize that contemporary textile
+                       production demands a holistic approach
+                        that transcends traditional manufacturing
+                         paradigms. By integrating environmentally
+                          responsible practices, cutting-edge technological advancements, and meticulously crafted design strategies, we consistently deliver superior denim products that not only meet but exceed contemporary market expectations and consumer requirements."
                   mb="44px"
                 />
                 {/* Button */}
@@ -33,21 +39,26 @@ const Sustainability = () => {
 
               {/* Right Image */}
               <div className="w-full px-4 lg:w-1/2 md:w-1/2">
-                <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <div className="relative mx-auto max-w-[500px] lg:mr-0">
                   <Image
-                    src="/images/sustainability/sus2.jpg"
+                    src="/images/sustainability/03.jpg"
                     alt="about-image"
-                    fill
+                    layout="responsive"
+                    width={25}
+                    height={24}
                     className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded"
                   />
                   <Image
-                    src="/images/sustainability/sus2.jpg"
+                    src="/images/sustainability/03.jpg"
                     alt="about-image"
-                    fill
+                    layout="responsive"
+                    width={25}
+                    height={24}
                     className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded"
                   />
                 </div>
               </div>
+
             </div>
           </div>
         </div>

@@ -7,9 +7,15 @@ const Features = () => {
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
-        <SectionTitle
-            title="Our Services"
-            paragraph="Each member of INDIGO's Services personifies the countless possibilities of denim and relentlessly pursues the unending objective of innovation and industry advancement. Find out more about how innovation permeates all we do."
+          <SectionTitle
+            title="Transforming Denim: Our Services"
+            paragraph="At INDIGO, our amazing team embodies
+             the limitless potential of denim, passionately 
+             striving for innovation and progress in
+              everything we do! We're excited to share
+               how our commitment to creativity and
+                advancement shapes our services. We
+                 bring innovation to life!"
             center
           />
 
@@ -20,6 +26,7 @@ const Features = () => {
           </div>
         </div>
       </section>
+
     </>
   );
 };

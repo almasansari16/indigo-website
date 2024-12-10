@@ -13,8 +13,8 @@ const Video = () => {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="One Stop Denim Destination"
+          paragraph="At Indigo Textile, as our one stop denim destination, we pride ourselves on delivering exceptional denim that meets the needs of every customer, combining tradition with cutting-edge technology to produce garments that tell a story."
           center
           mb="80px"
         />

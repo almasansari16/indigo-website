@@ -186,7 +186,7 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
-              <p className="mb-12 text-base font-medium text-body-color">
+              <p className="raleway mb-12 text-base font-medium text-body-color">
                 Our marketing team will get back to you ASAP via email.
               </p>
               <form onSubmit={handleSendMail}>
@@ -195,7 +195,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="raleway mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Name
                       </label>
@@ -214,7 +214,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="raleway mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Email
                       </label>
@@ -233,7 +233,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="raleway mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Message
                       </label>
@@ -252,14 +252,14 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+                      className="raleway rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
                     >
                       {isSubmitting ? 'Sending...' : 'Submit'}
                     </button>
                   </div>
                 </div>
               </form>
-              {status && <p className="mt-4 text-center">{status}</p>}
+              {status && <p className="mt-4 text-center raleway">{status}</p>}
             </div>
           </div>
         </div>
