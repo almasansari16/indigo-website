@@ -91,74 +91,13 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2 mt-5">
               <SectionTitle
-                title="Our Mission"
-                paragraph="At Indigo, we are committed to pushing the boundaries of denim innovation, prioritizing sustainability, and creating products that reflect our dedication to quality and style."
+                title="Our Vision"
+                paragraph="Engineers of denim strive to produce sustainable and habitable clothing. To attain the embodiment of excellence in global markets by culminating modern innovations and new solutions of denim."
                 mb="44px"
               />
             </div>
           </div>
         </div>
-
-
-        {/* key achivements */}
-        {/* <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Key Achievements"
-                paragraph="With over 36 million meters of denim produced annually, Indigo has garnered global recognition for its innovative technology and sustainable practices. Our products are trusted by fashion brands worldwide."
-                mb="44px"
-              />
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2 mt-5">
-              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/keyAchievements.webp"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
-                />
-                <Image
-                  src="/images/about/keyAchievements.webp"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* sustainability */}
-        {/* <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2 mt-5">
-              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/sustainability.webp"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
-                />
-                <Image
-                  src="/images/about/sustainability.webp"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
-                />
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2 mt-5">
-              <SectionTitle
-                title="Sustainability at Indigo"
-                paragraph="We are committed to minimizing our environmental footprint by adopting sustainable practices in every stage of our production process. From water conservation to the use of organic materials, Indigo is dedicated to eco-conscious fashion."
-                mb="44px"
-              />
-            </div>
-          </div>
-        </div> */}
 
         {/* meet the team */}
 
@@ -166,8 +105,20 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2 mt-5">
               <SectionTitle
-                title="Meet the Team"
-                paragraph="Our leadership team brings together decades of experience in the textile and fashion industry. Together, we steer Indigo towards a future of innovation and excellence."
+                title={<>
+                  The Minds Behind the Denim
+                  </>}
+                paragraph={
+                  <>
+                    <strong className=" text-xl leading-loose text-white font-bold ">Product and Development Team:</strong> <br />
+                    Pioneers in designing innovative denim products, ensuring top-notch quality and style. They drive creativity and craftsmanship, pushing the boundaries of fashion. <br />
+                    <strong className=" text-xl leading-loose text-white font-bold "> Research and Development Team:</strong> <br />
+                    Explores sustainable materials and techniques, enhancing denim functionality and performance while reducing environmental impact.<br />
+                    <strong className=" text-xl leading-loose text-white font-bold "> CSR Team:</strong> <br />
+                    Champions sustainability and community engagement, leading eco-friendly and ethical initiatives that support social and environmental well-being.
+
+                  </>
+                }
                 mb="44px"
               />
               {/* Add photos of leadership here */}

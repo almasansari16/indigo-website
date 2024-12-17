@@ -100,12 +100,14 @@ const imageData = [
 
 const Certifications = () => {
   const settings = {
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
+    dots: false,
+    infinite: true,
     autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 900,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -113,6 +115,7 @@ const Certifications = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
+          arrows: true,
         },
       },
       {
@@ -120,6 +123,7 @@ const Certifications = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
       {
@@ -134,7 +138,7 @@ const Certifications = () => {
   };
 
   return (
-    <div className="container mx-auto py-16 px-4 flex flex-col items-center">
+    <div className="container mx-auto py-4 px-4 flex flex-col items-center">
       <SectionTitle title="Certifications" paragraph="" center />
       <div className="w-full max-w-7xl">
         <Slider {...settings}>

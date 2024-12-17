@@ -184,7 +184,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-2/2 md:w-2/2 lg:w-6/12 xl:w-6/12">
+            <div className="w-full px-4 sm:w-2/2 md:w-2/2 lg:w-5/12 xl:w-5/12">
               <div className="mb-12 lg:mb-16">
                 <ul>
                   <li

@@ -43,22 +43,21 @@ const Sustainability = () => {
                   <Image
                     src="/images/sustainability/03.jpg"
                     alt="about-image"
-                    layout="responsive"
-                    width={25}
-                    height={24}
+                    layout="intrinsic" // Use intrinsic to define width/height proportionally
+                    width={800} // Larger width for responsive behavior
+                    height={450} // Proportionally smaller height
                     className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded"
                   />
                   <Image
                     src="/images/sustainability/03.jpg"
                     alt="about-image"
-                    layout="responsive"
-                    width={25}
-                    height={24}
-                    className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded"
+                    layout="intrinsic" // Use intrinsic for better control over the aspect ratio
+                    width={800} // Same width as the other image
+                    height={450} // Same height as the other image for consistency
+                    className="image_sus mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded"
                   />
                 </div>
               </div>
-
             </div>
           </div>
         </div>

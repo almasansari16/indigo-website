@@ -1,14 +1,11 @@
-'use client'
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Image from "next/image";
+'use client';
+import { useEffect, useState } from "react";
 import Certifications from "@/components/Certifications";
-import { useEffect } from "react";
-
-
-
 
 const SustainabilityPage1 = () => {
-  // Add scroll animation
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Scroll animation
   useEffect(() => {
     const handleScrollAnimation = () => {
       const elements = document.querySelectorAll('.fade-in');
@@ -23,148 +20,84 @@ const SustainabilityPage1 = () => {
     window.addEventListener('scroll', handleScrollAnimation);
     return () => window.removeEventListener('scroll', handleScrollAnimation);
   }, []);
+
+  const photos = [
+    '/images/Collaboration/001.jpg',
+    '/images/Collaboration/002.jpg',
+    '/images/Collaboration/003.jpg',
+    '/images/Collaboration/004.jpg',
+    '/images/Collaboration/005.jpg',
+    '/images/Collaboration/006.jpg',
+    '/images/Collaboration/007.jpg',
+  ];
+
+  const fullSizePhotos = [
+    '/images/Collaboration/fullSize-01.jpg',
+    '/images/Collaboration/fullSize-02.jpg',
+    '/images/Collaboration/fullSize-03.jpg',
+    '/images/Collaboration/fullSize-04.jpg',
+    '/images/Collaboration/fullSize-05.jpg',
+    '/images/Collaboration/fullSize-06.jpg',
+    '/images/Collaboration/fullSize-07.jpg',
+  ];
+
   return (
-    <>
-      <section className="pb-[120px] pt-[120px]">
+    <section className="pb-[60px] pt-[60px] sm:pb-[120px] sm:pt-[120px]">
+      <div className="container mx-auto px-4 text-center">
+        <h1 className="mb-6 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
+          OUR CONTRIBUTION TOWARDS <br /> A GREENER WORLD.
+        </h1>
 
+        {/* Responsive Image Grid */}
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-7 mt-20">
+          {photos.map((photo, index) => (
+            <div
+              key={index}
+              className="relative cursor-pointer hover:scale-105 transition-transform duration-300"
+              onClick={() => {
+                console.log(fullSizePhotos[index]); // Debug value
+                setSelectedImage(fullSizePhotos[index]);
+              }}
+            >
+              <img
+                src={photo}
+                alt={`Image ${index + 1}`}
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Full-Size Image Overlay */}
+      {selectedImage && (
         <div
-          style={{
-            backgroundSize: 'cover',
-            width: '100%',
-            height: '500px',
-          }}
-          className="flex items-center justify-center fade-in"
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setSelectedImage(null)}
         >
-          <div className="container mx-auto">
-            <div className="flex flex-wrap items-center justify-center text-center">
-              <div className="w-full px-4">
-                <div className="mx-auto max-w-[800px]">
-                  <h1 className="mb-3 text-3xl font-bold text-black dark:text-white xs:text-3xl sm:text-4xl md:text-5xl"
-                  >
-                    OUR CONTRIBUTION TOWARDS A GREENER WORLD.
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
+          {selectedImage ? (
+            <img
+              src={selectedImage}
+              alt="Full Size"
+              className="max-w-full max-h-full object-cover rounded-lg"
+            />
+          ) : (
+            <p className="text-white">Image not available</p>
+          )}
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-5 right-5 text-white text-3xl font-bold"
+          >
+            &times;
+          </button>
         </div>
-
-        {/* Sustainability Guidelines Section */}
-        <div className="mb-8 max-w-[70%] md:mb-0 lg:mb-12 m-auto mt-[100px] fade-in">
-          <h1 className="mb-3 text-3xl font-bold text-black dark:text-white xs:text-3xl sm:text-4xl md:text-5xl">
-            SUSTAINABILITY GUIDELINES
-          </h1>
-          <p className="text-lg text-center font-medium leading-relaxed text-body-color">
-            <b>Weave greener for a greener future</b><br />
-            We believe in making denim for a greener
-            tomorrow which is why we aim to adopt practices that
-            are sustainable and help lower our carbon footprint.
-          </p>
-        </div>
-        <hr className="w-1/2 mx-auto my-8 border-t-2 border-green-500 fade-in" />
-        <div className="container mx-auto px-4 my-40">
-          {/* Sustainable Fibers Section with Image Hover */}
-          <div className="container mx-auto px-4 my-40 fade-in">
-            {/* <h2 className="text-center mb-5 text-3xl font-bold">SUSTAINABLE FIBERS</h2> */}
-            <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="lg:col-span-4 px-4 hover:scale-105 transition-transform">
-                <Image
-                  src="/images/sustainability/fiber4.jpg"
-                  alt="sustainable fiber"
-                  width={400}
-                  height={200}
-                  style={{ height: '300px' }}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="flex items-center justify-center lg:col-span-4">
-                <h1 className="mb-3 text-3xl font-bold text-black dark:text-white xs:text-3xl sm:text-4xl md:text-5xl">SUSTAINABLE FIBERS</h1>
-              </div>
-              {[1, 3, 2, 5].map((i) => (
-                <div key={i} className="hover:scale-105 transition-transform">
-                  <Image
-                    src={`/images/sustainability/fiber${i}.jpg`}
-                    alt="sustainable fiber"
-                    width={400}
-                    height={250}
-                    style={{ height: '250px' }}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
+      )}
 
 
-        <div className="container mx-auto px-4 my-60">
-          <div className="container mx-auto px-4 my-40 fade-in">
-            <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="lg:col-span-4 px-4 hover:scale-105 transition-transform">
-                <Image
-                  src="/images/sustainability/dyeing1.jpg"
-                  alt="sustainable fiber"
-                  width={400}
-                  height={200}
-                  style={{ height: '300px' }}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="flex items-center justify-center lg:col-span-4">
-                <h1 className="mb-3 text-3xl font-bold text-black dark:text-white xs:text-3xl sm:text-4xl md:text-5xl"> SUSTAINABLE DYEING</h1>
-              </div>
-              {[4, 3, 2, 5].map((i) => (
-                <div key={i} className="hover:scale-105 transition-transform">
-                  <Image
-                    src={`/images/sustainability/dyeing${i}.jpg`}
-                    alt="sustainable fiber"
-                    width={400}
-                    height={250}
-                    style={{ height: '250px' }}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+      <Certifications />
 
-
-        <div className="container mx-auto px-4 my-60">
-          <div className="container mx-auto px-4 my-40 fade-in">
-            <div className="px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="lg:col-span-4 px-4 hover:scale-105 transition-transform">
-                <Image
-                  src="/images/sustainability/process2.jpg"
-                  alt="sustainable fiber"
-                  width={400}
-                  height={200}
-                  style={{ height: '300px' }}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="flex items-center justify-center lg:col-span-4">
-                <h1 className="mb-3 text-3xl font-bold text-black dark:text-white xs:text-3xl sm:text-4xl md:text-5xl"> SUSTAINABLE DYEING</h1>
-              </div>
-              {[1, 3, 4, 5].map((i) => (
-                <div key={i} className="hover:scale-105 transition-transform">
-                  <Image
-                    src={`/images/sustainability/process${i}.jpg`}
-                    alt="sustainable fiber"
-                    width={400}
-                    height={250}
-                    style={{ height: '250px' }}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <Certifications />
-              {/* Add custom styles for animations and hover */}
-        <style jsx>{`
+      {/* Fade-in animation */}
+      <style jsx>{`
         .fade-in {
           opacity: 0;
           transform: translateY(20px);
@@ -174,14 +107,8 @@ const SustainabilityPage1 = () => {
           opacity: 1;
           transform: translateY(0);
         }
-        .hover\\:scale-105:hover {
-          transform: scale(1.05);
-         }
-       `}</style>
-
-
-      </section>
-    </>
+      `}</style>
+    </section>
   );
 };
 

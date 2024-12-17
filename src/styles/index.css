@@ -35,3 +35,7 @@
 .raleway{
   font-family: var(--font-raleway);
 }
+.image_sus{
+  max-height: 600px; /* Control maximum height */
+  object-fit: "cover"; /* Ensure the image fills its container */
+}

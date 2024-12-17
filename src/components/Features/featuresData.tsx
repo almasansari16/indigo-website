@@ -38,7 +38,7 @@ const featuresData: Feature[] = [
     icon: (
       <Image
         className="feature-icon"
-        src="/images/process/rebeaming.jpg"
+        src="/images/process/rebeaming2.jpg"
         alt="Rebeaming"
         width={200}
         height={200}

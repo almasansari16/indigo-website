@@ -1,4 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
+import ProcessSlider from "./Processslider";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 
@@ -8,7 +9,11 @@ const Features = () => {
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Transforming Denim: Our Services"
+            title={
+              <>
+              Transforming Denim: <br /> Our Services
+              </>
+            }
             paragraph="At INDIGO, our amazing team embodies
              the limitless potential of denim, passionately 
              striving for innovation and progress in
@@ -19,11 +24,12 @@ const Features = () => {
             center
           />
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          {/* <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map((feature) => (
               <SingleFeature key={feature.id} feature={feature} />
             ))}
-          </div>
+          </div> */}
+          <ProcessSlider />
         </div>
       </section>
 
