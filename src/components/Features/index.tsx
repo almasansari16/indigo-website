@@ -11,7 +11,7 @@ const Features = () => {
           <SectionTitle
             title={
               <>
-              Transforming Denim: <br /> Our Services
+              Transforming Denim <br /> Our Services
               </>
             }
             paragraph="At INDIGO, our amazing team embodies

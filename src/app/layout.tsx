@@ -6,7 +6,18 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter, Raleway, Roboto } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import localfont from "next/font/local";
 
+const ClashGrotesk = localfont({
+  src: [
+    {
+      path: "../../public/fonts/ClashGrotesk-Bold.woff2",
+      weight: "400",
+      style: "normal",
+      },
+      ],
+      variable: "--font-ClashGrotesk"
+})
 const inter = Inter({ subsets: ["latin"] });
 const roboto_init = Roboto({
   subsets: ['latin'],
@@ -36,7 +47,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${raleway.variable}`}>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${raleway.variable} ${ClashGrotesk.variable}`}>
         <Providers>
           <Header />
           {children}

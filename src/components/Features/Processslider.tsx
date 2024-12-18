@@ -149,8 +149,8 @@ const ProcessSlider = () => {
               <div className="transition-transform transform hover:scale-105 mb-4 h-[250px] w-[250px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
                 {item.icon}
               </div>
-              <h3 className="mb-2 text-lg font-bold text-black dark:text-white">{item.title}</h3>
-              <p className="text-sm font-medium leading-relaxed text-primary">{item.paragraph}</p>
+              <h3 className="raleway mb-2 text-lg font-bold text-black dark:text-white">{item.title}</h3>
+              <p className="raleway text-sm font-medium leading-relaxed text-primary">{item.paragraph}</p>
             </div>
 
           ))}

@@ -52,16 +52,20 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/aboutUs.jpg"
                   alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                  layout="intrinsic"
+                  width={1200}  // Set the width according to your design needs
+                  height={800}
+                  className="mx-auto object-contain max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/aboutUs.jpg"
                   alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                  layout="intrinsic"
+                  width={1200}  // Set the width according to your design needs
+                  height={800}
+                  className="mx-auto object-contain hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
               </div>
             </div>
@@ -75,21 +79,25 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/ourMission.jpg"
+                  src="/images/about/ourVision.jpg"
                   alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                  layout="intrinsic"
+                  width={1200}  // Set the width according to your design needs
+                  height={800}
+                  className="mx-auto object-contain max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/ourMission.jpg"
+                  src="/images/about/ourVision.jpg"
                   alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                  layout="intrinsic"
+                  width={1200}  // Set the width according to your design needs
+                  height={800}
+                  className="mx-auto object-contain hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 mt-5">
+            <div className="w-full px-4 lg:w-1/2 -mt-10">
               <SectionTitle
                 title="Our Vision"
                 paragraph="Engineers of denim strive to produce sustainable and habitable clothing. To attain the embodiment of excellence in global markets by culminating modern innovations and new solutions of denim."
@@ -107,7 +115,7 @@ const AboutSectionOne = () => {
               <SectionTitle
                 title={<>
                   The Minds Behind the Denim
-                  </>}
+                </>}
                 paragraph={
                   <>
                     <strong className=" text-xl leading-loose text-white font-bold ">Product and Development Team:</strong> <br />
@@ -126,17 +134,22 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2 mt-5">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/ourTeam.jpg"
+                  src="/images/about/meetTheTeam.jpg"
                   alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
+                  layout="intrinsic"
+                  width={1200}  // Set the width according to your design needs
+                  height={800}  // Set the height according to your design needs
+                  className="mx-auto object-contain max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
                 <Image
-                  src="/images/about/ourTeam.jpg"
+                  src="/images/about/meetTheTeam.jpg"
                   alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
+                  layout="intrinsic"
+                  width={1200}  // Set the width according to your design needs
+                  height={800}  // Set the height according to your design needs
+                  className="mx-auto object-contain hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded-lg"
                 />
+
               </div>
             </div>
           </div>

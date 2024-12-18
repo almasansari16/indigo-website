@@ -13,17 +13,25 @@ const Sustainability = () => {
               <div className="w-full px-4 lg:w-1/2 md:w-1/2">
                 <SectionTitle
                   title="Your Denim Journey with Us"
-                  paragraph=" As a prominent entity in the
-                   global denim manufacturing landscape,
-                    our organization distinguishes itself 
-                    through a strategic commitment to three
-                     core principles: sustainability,
-                      innovation, and purposeful design. 
+                  paragraph={
+                    <>
+                      As a prominent entity in the
+                      global denim manufacturing landscape,
+                      our organization distinguishes itself
+                      through a strategic commitment to three
+                      core principles: sustainability,
+                      innovation, and purposeful design. <br />
                       We recognize that contemporary textile
-                       production demands a holistic approach
-                        that transcends traditional manufacturing
-                         paradigms. By integrating environmentally
-                          responsible practices, cutting-edge technological advancements, and meticulously crafted design strategies, we consistently deliver superior denim products that not only meet but exceed contemporary market expectations and consumer requirements."
+                      production demands a holistic approach
+                      that transcends traditional manufacturing
+                      paradigms. <br /> By integrating environmentally
+                      responsible practices, cutting-edge technological
+                      advancements, and meticulously crafted design
+                      strategies, we consistently deliver superior
+                      denim products that not only meet but exceed
+                      contemporary market expectations and consumer requirements.
+                    </>
+                  }
                   mb="44px"
                 />
                 {/* Button */}
@@ -43,18 +51,18 @@ const Sustainability = () => {
                   <Image
                     src="/images/sustainability/03.jpg"
                     alt="about-image"
-                    layout="intrinsic" // Use intrinsic to define width/height proportionally
-                    width={800} // Larger width for responsive behavior
-                    height={450} // Proportionally smaller height
-                    className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded"
+                    layout="intrinsic"
+                    width={1200}  // Set the width according to your design needs
+                    height={800}// Proportionally smaller height
+                    className="image_sus mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 rounded"
                   />
                   <Image
                     src="/images/sustainability/03.jpg"
                     alt="about-image"
-                    layout="intrinsic" // Use intrinsic for better control over the aspect ratio
-                    width={800} // Same width as the other image
-                    height={450} // Same height as the other image for consistency
-                    className="image_sus mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded"
+                    layout="intrinsic"
+                    width={1200}  // Set the width according to your design needs
+                    height={800}// Same height as the other image for consistency
+                    className="image_sus image_sus mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 rounded"
                   />
                 </div>
               </div>

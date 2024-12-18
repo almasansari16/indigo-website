@@ -77,7 +77,8 @@ module.exports = {
       },
       fontFamily:{
         roboto : ['var(--font-roboto)'],
-        raleway : ['var(--font-Raleway)']
+        raleway : ['var(--font-Raleway)'],
+        clashGrotesk : ['var(--font-ClashGrotesk)']
       }
     },
   },

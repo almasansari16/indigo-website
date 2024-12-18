@@ -82,16 +82,16 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 {/* Main Heading */}
-                <h1 className="mb-6 bg-gradient-to-r from-yellow-500 via-white to-blue-500 bg-clip-text text-4xl font-extrabold uppercase leading-tight text-transparent sm:text-5xl md:text-6xl">
+                <h1 className="font-clashGrotesk mb-6 bg-gradient-to-r from-yellow-500 via-white to-blue-500 bg-clip-text text-4xl font-extrabold uppercase leading-tight text-transparent sm:text-5xl md:text-6xl">
                   Denim Built to Inspire
                 </h1>
                 {/* Subheading */}
-                <h2 className="mb-6 text-xl font-semibold text-gray-200 sm:text-2xl md:text-3xl shadow-sm">
+                <h2 className="raleway mb-6 text-xl font-semibold text-gray-200 sm:text-2xl md:text-3xl shadow-sm">
                   Mission
                 </h2>
 
                 {/* Paragraph */}
-                <p className="mb-12 text-lg text-gray-300 leading-relaxed tracking-wide sm:text-xl md:text-2xl">
+                <p className="raleway mb-12 text-lg text-gray-300 leading-relaxed tracking-wide sm:text-xl md:text-2xl">
                   To uphold global leadership in the denim industry by corroborating authentic processing for quality and amenity wear. We enact sustainability and empower innovation by fabricating denim under the surveillance of qualified textile engineers. Our utilities include client expectations, exceptional services, and adequate quality with extravagance.
                 </p>
                 {/* Button */}

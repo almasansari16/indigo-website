@@ -31,7 +31,7 @@ const Footer = () => {
                     style={{ width: '150px', height: '50px' }}
                   />
                 </Link>
-                <p className="raleway mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                <p className="raleway mb-9 text-base leading-relaxed text-primary dark:text-body-color-dark">
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=Naclass+306+Deh+Joreji+Bin+Qasim,+Karachi"
                     target="_blank"
@@ -90,7 +90,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="18"
@@ -110,7 +110,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="18"
@@ -127,7 +127,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="17"
@@ -151,7 +151,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About
                     </Link>
@@ -159,7 +159,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/sustainability"
-                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Sustainability
                     </Link>
@@ -167,7 +167,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/indigoals"
-                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Indigoals
                     </Link>
@@ -175,7 +175,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/contact"
-                      className="mb-4 raleway inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 raleway inline-block text-base text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Contact Us
                     </Link>
@@ -188,7 +188,7 @@ const Footer = () => {
               <div className="mb-12 lg:mb-16">
                 <ul>
                   <li
-                    className="map-container mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="map-container mb-4 inline-block text-base text-primary duration-300 hover:text-body-color dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <iframe
                       id="iframeid"
@@ -208,7 +208,7 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center raleway text-base text-body-color dark:text-white">
+            <p className="text-center raleway text-base text-primary dark:text-white">
               © {new Date().getFullYear()} Created by {' '}
               <a
                 href="/"

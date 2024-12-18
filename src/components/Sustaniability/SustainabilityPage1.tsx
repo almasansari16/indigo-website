@@ -49,7 +49,7 @@ const SustainabilityPage1 = () => {
         </h1>
 
         {/* Responsive Image Grid */}
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-7 mt-20">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-7 md:grid-cols-7 mt-20">
           {photos.map((photo, index) => (
             <div
               key={index}
@@ -93,8 +93,9 @@ const SustainabilityPage1 = () => {
         </div>
       )}
 
-
-      <Certifications />
+      <div className="lg:mt-20">
+        <Certifications />
+      </div>
 
       {/* Fade-in animation */}
       <style jsx>{`
