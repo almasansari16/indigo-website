@@ -141,12 +141,12 @@ const ProcessSlider = () => {
   };
 
   return (
-    <div className="container mx-auto py-16 px-4 flex flex-col items-center">
+    <div className="container mx-auto px-4 flex flex-col items-center">
       <div className="w-[100%] items-center max-w-7xl ">
         <Slider {...settings}>
           {featuresData.map((item) => (
             <div key={item.id} className="flex flex-col items-center justify-center p-4">
-              <div className="transition-transform transform hover:scale-105 mb-4 h-[250px] w-[250px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+              <div className="relative transition-transform transform hover:scale-105 mb-4 h-[250px] w-[250px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
                 {item.icon}
               </div>
               <h3 className="raleway mb-2 text-lg font-bold text-black dark:text-white">{item.title}</h3>

@@ -9,26 +9,32 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 
 const imageData = [
   {
+    id: 1,
     frontSrc: '/images/tags/SS 25/Blue-Heaven-Front.png',
     backSrc: '/images/tags/SS 25/Blue-Heaven-Back.png'
   },
   {
+    id: 2,
     frontSrc: '/images/tags/SS 25/Conflux-Front.png',
     backSrc: '/images/tags/SS 25/Conflux-Back.png'
   },
   {
+    id: 3,
     frontSrc: '/images/tags/SS 25/Flexi-Ease-Front.png',
     backSrc: '/images/tags/SS 25/Flexi-Ease-Back.png'
   },
   {
+    id: 4,
     frontSrc: '/images/tags/SS 25/heritage-reborn-Front.png',
     backSrc: '/images/tags/SS 25/heritage-reborn-Back.png'
   },
   {
+    id: 5,
     frontSrc: '/images/tags/SS 25/Quill-Front.png',
     backSrc: '/images/tags/SS 25/Quill-Back.png'
   },
   {
+    id: 6,
     frontSrc: '/images/tags/SS 25/Vibrant-Essence-Front.png',
     backSrc: '/images/tags/SS 25/Vibrant-Essence-Back.png'
   },
@@ -72,11 +78,21 @@ const SS25 = () => {
 
   return (
     <>
+      <Breadcrumb pageName="Collection SS 25" description="" currentPageName="SS 25" />
+
+      <div className="flex justify-center">
+        <img
+          src="/images/lookbook/SS_25.jpg"
+          alt="AW 23 24 Cover"
+          width={1200} // Original width
+          height={400} // Fixed height
+          className="rounded-lg shadow-lg responsive-image"
+        />
+      </div>
       <div className="container mx-auto py-16 px-4">
-        <Breadcrumb pageName="Collection SS 25" description="" currentPageName="SS 25" />
         <Slider {...settings}>
           {imageData.map((item, index) => (
-            <div key={index} className="px-4">
+            <div key={item.id} className="px-4">
               <div className="relative mx-auto" style={{ height: '340px', width: '170px' }}>
                 <div className="flip-card" style={{ height: '100%', width: '100%' }}>
                   <div className="flip-card-inner" style={{ height: '100%', width: '100%' }}>

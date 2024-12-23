@@ -6,12 +6,12 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-16">
         <div className="container">
           <SectionTitle
             title={
               <>
-              Transforming Denim <br /> Our Services
+              Transforming Denim 
               </>
             }
             paragraph="At INDIGO, our amazing team embodies
@@ -23,12 +23,6 @@ const Features = () => {
                  bring innovation to life!"
             center
           />
-
-          {/* <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
-          </div> */}
           <ProcessSlider />
         </div>
       </section>

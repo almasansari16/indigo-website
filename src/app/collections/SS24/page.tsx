@@ -9,30 +9,37 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 
 const imageData = [
   {
+    id: 1,
     frontSrc: '/images/tags/SS 24/Blueout-Front.png',
     backSrc: '/images/tags/SS 24/Blueout-Back.png'
   },
   {
+    id: 2,
     frontSrc: '/images/tags/SS 24/Ecofusion-Front.png',
     backSrc: '/images/tags/SS 24/Ecofusion-Back.png'
   },
   {
+    id: 3,
     frontSrc: '/images/tags/SS 24/Flex Up Front.png',
     backSrc: '/images/tags/SS 24/Flex Up Back.png'
   },
   {
+    id: 4,
     frontSrc: '/images/tags/SS 24/Newstalgia Front.png',
     backSrc: '/images/tags/SS 24/Newstalgia Back.png'
   },
   {
+    id: 5,
     frontSrc: '/images/tags/SS 24/Prisma-Front.png',
     backSrc: '/images/tags/SS 24/Prisma-Back.png'
   },
   {
+    id: 6,
     frontSrc: '/images/tags/SS 24/Softfluent.png',
     backSrc: '/images/tags/SS 24/Softfluent.png'
   },
   {
+    id: 7,
     frontSrc: '/images/tags/SS 24/Urban-Adventures-Front.png',
     backSrc: '/images/tags/SS 24/Urban-Adventures-Back.png'
   },
@@ -77,11 +84,20 @@ const SS24 = () => {
 
   return (
     <>
+      <Breadcrumb pageName="Collection SS 24" description="" currentPageName="SS 24" />
+      <div className="flex justify-center">
+        <img
+          src="/images/lookbook/SS_24.jpg"
+          alt="AW 23 24 Cover"
+          width={1200} // Original width
+          height={400} // Fixed height
+          className="rounded-lg shadow-lg responsive-image"
+        />
+      </div>
       <div className="container mx-auto py-16 px-4">
-        <Breadcrumb pageName="Collection SS 24" description="" currentPageName="SS 24" />
         <Slider {...settings}>
-        {imageData.map((item, index) => (
-            <div key={index} className="px-4">
+          {imageData.map((item, index) => (
+            <div key={item.id} className="px-4">
               <div className="relative mx-auto" style={{ height: '340px', width: '170px' }}>
                 <div className="flip-card" style={{ height: '100%', width: '100%' }}>
                   <div className="flip-card-inner" style={{ height: '100%', width: '100%' }}>

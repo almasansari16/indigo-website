@@ -32,12 +32,14 @@ const imageData = [
 
 const IndigoalsSlider = () => {
   const settings = {
-    infinite: false,
-    speed: 500,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 900,
     slidesToShow: 2,
     slidesToScroll: 1,
-    initialSlide: 0,
-    autoplay: true,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,

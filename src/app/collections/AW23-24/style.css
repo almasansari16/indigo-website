@@ -44,3 +44,10 @@
   padding: 20px;
   border-radius: 8px;
 }
+ /* Ensure the image is responsive */
+.responsive-image {
+  width: 100%; /* Make the image take full width */
+  height: 400px; /* Set height to 400px */
+  object-fit: cover; /* Make sure the image maintains its aspect ratio */
+   /* Optional: Add rounded corners */
+}

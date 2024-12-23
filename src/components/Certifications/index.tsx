@@ -105,7 +105,7 @@ const Certifications = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 900,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 3,
     pauseOnHover: true,
     responsive: [
@@ -138,7 +138,7 @@ const Certifications = () => {
   };
 
   return (
-    <div className="container mx-auto py-4 px-4 flex flex-col items-center">
+    <div className="container mx-auto py-16 px-4 flex flex-col items-center">
       <SectionTitle title="Certifications" paragraph="" center />
       <div className="w-full max-w-7xl">
         <Slider {...settings}>

@@ -15,7 +15,7 @@ const Indigoals = () => {
       <Breadcrumb
         pageName="Indigoals"
         currentPageName='Indigoals'
-        description="Our Vision for a Sustainable Tomorrow"
+        description=""
       />
 
       <section
@@ -87,11 +87,11 @@ const Indigoals = () => {
 
 function GoalCard({ title, description, icon }) {
   return (
-    <div className="p-6 bg-primary-light dark:bg-dark rounded-lg shadow-three transition duration-300 hover:shadow-lg">
+    <div className="p-6 bg-gray-300 dark:bg-dark rounded-lg shadow-three transition duration-300 hover:shadow-lg">
       <div className="flex items-center justify-center w-16 h-16 mx-auto bg-primary rounded-full shadow-md mb-4">
         <img src={icon} alt={title} className="w-8 h-8 object-contain" />
       </div>
-      <h3 className="text-xl raleway font-bold text-white dark:text-body-color.dark mb-2">
+      <h3 className="text-xl raleway font-bold text-primary dark:text-body-color.dark mb-2">
         {title}
       </h3>
       <p className="raleway text-sm font-raleway text-body-color dark:text-body-color.dark">

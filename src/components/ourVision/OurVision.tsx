@@ -4,7 +4,7 @@ import SectionTitle from '../Common/SectionTitle';
 const OurVision = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-16 ">
         <div className="container">
           <SectionTitle
             title="Our Vision"

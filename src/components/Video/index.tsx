@@ -10,13 +10,13 @@ const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 py-18 ">
       <div className="container">
         <SectionTitle
           title="One Stop Denim Destination"
           paragraph="At Indigo Textile, as our one stop denim destination, we pride ourselves on delivering exceptional denim that meets the needs of every customer, combining tradition with cutting-edge technology to produce garments that tell a story."
           center
-          mb="80px"
+         
         />
 
         <div className="-mx-4 flex flex-wrap">
