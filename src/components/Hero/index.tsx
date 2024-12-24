@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
+              <div className="mx-auto max-w-[80%] text-center">
                 {/* Main Heading */}
                 <h1 className="font-clashGrotesk mb-6 tracking-[5px] bg-gradient-to-r from-yellow-500 via-white to-blue-500 bg-clip-text text-4xl font-extrabold uppercase leading-tight text-transparent sm:text-5xl md:text-6xl">
                   Denim {''} Built  {''} to {''} Inspire
