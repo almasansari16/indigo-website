@@ -1,29 +1,76 @@
 .feature-icon {
-  width: 220px;
-  height: 220px;
+  width: 225px;
+  height: 225px;
   object-fit: cover;
 }
 /* Slider Container */
-.slider-container {
-  max-width: 1200px;
+.feature-icon {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-/* Feature Card */
-.feature-card {
-  border: 1px solid #e5e7eb;
-  background: linear-gradient(to bottom, #ffffff, #f9fafb);
+.feature-icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
-.feature-card:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.slick-dots li button:before {
+  color: #fff; /* Dots in white for visibility */
+  font-size: 12px;
 }
 
-/* Image Container */
-.image-container img {
+.slick-dots li.slick-active button:before {
+  color: #00bcd4; /* Active dot in theme color */
+}
+
+.container {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.bg-brown-700 {
+  background-color: #5a3e2b;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.rounded-lg {
   border-radius: 0.5rem;
 }
 
-/* Typography */
-.text-primary {
-  color: #1e3a8a; /* Indigo accent */
+.text-center {
+  padding: 0.5rem 1rem; /* Add padding for a neat layout */
+}
+
+.feature-title {
+
+  font-size: 1.5rem; /* Slightly larger font */
+  font-weight: bold;
+  color: #3d506e; /* Darker for better readability */
+  text-transform: uppercase; /* Make titles more striking */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 0.5rem;
+}
+
+.feature-paragraph {
+
+  font-size: 1rem;
+  line-height: 1.6; /* Better readability */
+  color: #475569; /* Softer tone for a pleasing look */
+  margin-top: 0.5rem;
+  
 }

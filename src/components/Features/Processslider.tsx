@@ -125,11 +125,12 @@ const ProcessSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 900,
+    autoplaySpeed: 0,
+    speed: 9000,
+    cssEase: 'linear',
     slidesToShow: 3,
-    slidesToScroll: 3,
     pauseOnHover: true,
     centerMode: true, // This centers the slides
     centerPadding: "0",
@@ -142,17 +143,20 @@ const ProcessSlider = () => {
 
   return (
     <div className="container mx-auto px-4 flex flex-col items-center">
-      <div className="w-[100%] items-center max-w-7xl ">
+      <div className="w-[100%] items-center max-w-7xl">
         <Slider {...settings}>
           {featuresData.map((item) => (
-            <div key={item.id} className="flex flex-col items-center justify-center p-4">
-              <div className="relative transition-transform transform hover:scale-105 mb-4 h-[250px] w-[250px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-                {item.icon}
+            <div key={item.id} className="">
+              <div className="flex flex-col items-center justify-center">
+                <div className=" transition-transform transform hover:scale-105 mb-4 h-[250px] w-[250px] flex items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+                  {item.icon}
+                </div>
+                <div className="text-center">
+                  <h3 className="feature-title raleway">{item.title}</h3>
+                  <p className="feature-paragraph raleway">{item.paragraph}</p>
+                </div>
               </div>
-              <h3 className="raleway mb-2 text-lg font-bold text-black dark:text-white">{item.title}</h3>
-              <p className="raleway text-sm font-medium leading-relaxed text-primary">{item.paragraph}</p>
             </div>
-
           ))}
         </Slider>
       </div>

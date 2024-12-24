@@ -1,9 +1,9 @@
 const SectionTitle = ({
   title,
   paragraph,
-  width = "570px",
+  width = "800px",
   center = false,
-  mb = "100px",
+  mb = "40px",
 }: {
   title: React.ReactNode; // ReactNode for better type coverage
   paragraph: React.ReactNode;
