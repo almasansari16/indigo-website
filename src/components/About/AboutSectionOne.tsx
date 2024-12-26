@@ -19,13 +19,15 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className="">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="About Us"
+                title={
+                  <>About Us</>
+                }
                 paragraph={
                   <>
                     Indigo Textile (Pvt) Ltd was formed in the year 2005 with the vision of setting up
@@ -99,7 +101,9 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2 -mt-10">
               <SectionTitle
-                title="Our Vision"
+                title={
+                  <>Our Vision</>
+                }
                 paragraph="Engineers of denim strive to produce sustainable and habitable clothing. To attain the embodiment of excellence in global markets by culminating modern innovations and new solutions of denim."
                 mb="44px"
               />
@@ -177,7 +181,9 @@ const AboutSectionOne = () => {
             </div> */}
             <div className="w-full px-4 lg:w-1/2 mt-5">
               <SectionTitle
-                title="Join Us in Our Mission"
+                title={
+                  <>Join Us in Our Mission</>
+                }
                 paragraph="Be a part of our sustainable journey. Contact us to learn more about our products or explore partnership opportunities."
                 mb="44px"
               />

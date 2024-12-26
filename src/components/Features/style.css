@@ -28,11 +28,11 @@
 }
 
 
-.text-center {
+/* .text-center {
   text-align: center;
-}
+} */
 
-.bg-brown-700 {
+/* .bg-brown-700 {
   background-color: #5a3e2b;
 }
 
@@ -50,10 +50,10 @@
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
+} */
 
 .text-center {
-  padding: 0.5rem 1rem; /* Add padding for a neat layout */
+  padding: 0.5rem 1rem; 
 }
 
 .feature-title {

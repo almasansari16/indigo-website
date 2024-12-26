@@ -22,7 +22,7 @@ const Indigoals = () => {
         className="relative mx-auto max-w-3xl px-6 py-12 text-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('images/indigoals/unsdg2.png')",
-          backgroundSize: "75%",
+          backgroundSize: "65%",
         }}
       >
         {/* Overlay for better contrast and increased opacity */}

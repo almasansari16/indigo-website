@@ -1,6 +1,8 @@
+'use client'
 import React from 'react';
 import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Sustainability = () => {
   return (
@@ -12,7 +14,11 @@ const Sustainability = () => {
               {/* Left Content */}
               <div className="w-full px-4 lg:w-1/2 md:w-1/2">
                 <SectionTitle
-                  title="Your Denim Journey with Us"
+                  title={
+                    <>
+                        Your Denim Journey with Us
+                    </>
+                  }
                   paragraph={
                     <>
                       As a prominent entity in the
